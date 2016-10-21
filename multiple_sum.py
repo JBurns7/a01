@@ -36,13 +36,14 @@ def run_tests():
 
 # Edit this code
 def multi_sum(n):
-    total= 0
-    multiple = 0
 
-    for i in range(7, n, 7):
-        multiple = multiple + 7
-        total= total + multiple + i
-        if total % 5 == 0:
-            total = total - multiple
+    total = 0
+
+    for i in range(7, n + 1, 7):
+        total = total + i
+        if i % 5 == 0:
+            total = total - i
+          
+    
     print(total)
 
